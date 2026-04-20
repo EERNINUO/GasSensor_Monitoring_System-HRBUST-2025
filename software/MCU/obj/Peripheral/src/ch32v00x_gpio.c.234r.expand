@@ -1,0 +1,2611 @@
+
+;; Function GPIO_DeInit (GPIO_DeInit, funcdef_no=21, decl_uid=4001, cgraph_uid=22, symbol_order=22)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 17 from 9 to 10.
+Redirecting jump 31 from 9 to 10.
+Edge 7->9 redirected to 10
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":33 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 72)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":34 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 74)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":34 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 73)
+        (plus:SI (reg:SI 74)
+            (const_int -2048 [0xfffffffffffff800]))) "../Peripheral/src/ch32v00x_gpio.c":34 -1
+     (expr_list:REG_EQUAL (const_int 1073809408 [0x40010800])
+        (nil)))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:SI 72)
+                (reg:SI 73))
+            (label_ref 19)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":34 -1
+     (nil)
+ -> 19)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":36 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:SI 10 a0)
+        (const_int 4 [0x4])) "../Peripheral/src/ch32v00x_gpio.c":36 -1
+     (nil))
+(call_insn 13 12 14 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":36 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 14 13 15 4 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":37 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 10 a0)
+        (const_int 4 [0x4])) "../Peripheral/src/ch32v00x_gpio.c":37 -1
+     (nil))
+(call_insn 16 15 17 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":37 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(jump_insn 17 16 18 4 (set (pc)
+        (label_ref:SI 48)) 250 {jump}
+     (nil)
+ -> 48)
+(barrier 18 17 19)
+(code_label 19 18 20 5 2 (nil) [1 uses])
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg:SI 75)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":39 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 76)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":39 -1
+     (nil))
+(jump_insn 23 22 24 5 (set (pc)
+        (if_then_else (ne (reg:SI 75)
+                (reg:SI 76))
+            (label_ref 33)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":39 -1
+     (nil)
+ -> 33)
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 6 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":41 -1
+     (nil))
+(insn 26 25 27 6 (set (reg:SI 10 a0)
+        (const_int 16 [0x10])) "../Peripheral/src/ch32v00x_gpio.c":41 -1
+     (nil))
+(call_insn 27 26 28 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":41 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 28 27 29 6 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":42 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 10 a0)
+        (const_int 16 [0x10])) "../Peripheral/src/ch32v00x_gpio.c":42 -1
+     (nil))
+(call_insn 30 29 31 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":42 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(jump_insn 31 30 32 6 (set (pc)
+        (label_ref:SI 48)) 250 {jump}
+     (nil)
+ -> 48)
+(barrier 32 31 33)
+(code_label 33 32 34 7 4 (nil) [1 uses])
+(note 34 33 35 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 7 (set (reg:SI 77)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":44 -1
+     (nil))
+(insn 36 35 37 7 (set (reg:SI 79)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":44 -1
+     (nil))
+(insn 37 36 38 7 (set (reg:SI 78)
+        (plus:SI (reg:SI 79)
+            (const_int 1024 [0x400]))) "../Peripheral/src/ch32v00x_gpio.c":44 -1
+     (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
+        (nil)))
+(jump_insn 38 37 39 7 (set (pc)
+        (if_then_else (ne (reg:SI 77)
+                (reg:SI 78))
+            (label_ref:SI 48)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":44 180 {*branchsi}
+     (nil)
+ -> 48)
+(note 39 38 40 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 8 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":46 -1
+     (nil))
+(insn 41 40 42 8 (set (reg:SI 10 a0)
+        (const_int 32 [0x20])) "../Peripheral/src/ch32v00x_gpio.c":46 -1
+     (nil))
+(call_insn 42 41 43 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":46 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 43 42 44 8 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":47 -1
+     (nil))
+(insn 44 43 45 8 (set (reg:SI 10 a0)
+        (const_int 32 [0x20])) "../Peripheral/src/ch32v00x_gpio.c":47 -1
+     (nil))
+(call_insn 45 44 48 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":47 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(code_label 48 45 49 10 1 (nil) [3 uses])
+(note 49 48 0 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+
+;; Function GPIO_AFIODeInit (GPIO_AFIODeInit, funcdef_no=22, decl_uid=4003, cgraph_uid=23, symbol_order=23)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":61 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 10 a0)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":61 -1
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":61 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 8 7 9 2 (set (reg:SI 11 a1)
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":62 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 10 a0)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":62 -1
+     (nil))
+(call_insn 10 9 13 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphResetCmd") [flags 0x41] <function_decl 05b59d98 RCC_APB2PeriphResetCmd>) [0 RCC_APB2PeriphResetCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":62 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 13 10 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":63 -1
+     (nil))
+
+;; Function GPIO_Init (GPIO_Init, funcdef_no=23, decl_uid=4006, cgraph_uid=24, symbol_order=24)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 5->15 redirected to 16
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":76 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])
+        (reg:SI 11 a1 [ GPIO_InitStruct ])) "../Peripheral/src/ch32v00x_gpio.c":76 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 currentmode+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":77 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 currentpin+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":77 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":77 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":77 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":78 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 pinmask+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":78 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 87)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":80 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 72 [ _1 ])
+        (mem:SI (plus:SI (reg/f:SI 87)
+                (const_int 8 [0x8])) [6 GPIO_InitStruct_30(D)->GPIO_Mode+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":80 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 88)
+        (and:SI (reg:SI 72 [ _1 ])
+            (const_int 15 [0xf]))) "../Peripheral/src/ch32v00x_gpio.c":80 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 currentmode+0 S4 A32])
+        (reg:SI 88)) "../Peripheral/src/ch32v00x_gpio.c":80 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 89)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":82 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 73 [ _2 ])
+        (mem:SI (plus:SI (reg/f:SI 89)
+                (const_int 8 [0x8])) [6 GPIO_InitStruct_30(D)->GPIO_Mode+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":82 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 74 [ _3 ])
+        (and:SI (reg:SI 73 [ _2 ])
+            (const_int 16 [0x10]))) "../Peripheral/src/ch32v00x_gpio.c":82 -1
+     (nil))
+(jump_insn 20 19 21 2 (set (pc)
+        (if_then_else (eq (reg:SI 74 [ _3 ])
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":82 -1
+     (nil)
+ -> 27)
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 4 (set (reg/f:SI 90)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":84 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 75 [ _4 ])
+        (mem:SI (plus:SI (reg/f:SI 90)
+                (const_int 4 [0x4])) [5 GPIO_InitStruct_30(D)->GPIO_Speed+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":84 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 92)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 currentmode+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":84 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 91)
+        (ior:SI (reg:SI 92)
+            (reg:SI 75 [ _4 ]))) "../Peripheral/src/ch32v00x_gpio.c":84 -1
+     (nil))
+(insn 26 25 27 4 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 currentmode+0 S4 A32])
+        (reg:SI 91)) "../Peripheral/src/ch32v00x_gpio.c":84 -1
+     (nil))
+(code_label 27 26 28 5 8 (nil) [1 uses])
+(note 28 27 29 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 5 (set (reg/f:SI 93)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":87 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:SI 76 [ _5 ])
+        (zero_extend:SI (mem:HI (reg/f:SI 93) [4 GPIO_InitStruct_30(D)->GPIO_Pin+0 S2 A32]))) "../Peripheral/src/ch32v00x_gpio.c":87 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 77 [ _6 ])
+        (reg:SI 76 [ _5 ])) "../Peripheral/src/ch32v00x_gpio.c":87 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 78 [ _7 ])
+        (and:SI (reg:SI 77 [ _6 ])
+            (const_int 255 [0xff]))) "../Peripheral/src/ch32v00x_gpio.c":87 -1
+     (nil))
+(jump_insn 33 32 34 5 (set (pc)
+        (if_then_else (eq (reg:SI 78 [ _7 ])
+                (const_int 0 [0]))
+            (label_ref:SI 115)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":87 180 {*branchsi}
+     (nil)
+ -> 115)
+(note 34 33 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 6 (set (reg/f:SI 94)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":89 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 95)
+        (mem/v:SI (reg/f:SI 94) [2 GPIOx_33(D)->CFGLR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":89 -1
+     (nil))
+(insn 37 36 38 6 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 95)) "../Peripheral/src/ch32v00x_gpio.c":89 -1
+     (nil))
+(insn 38 37 39 6 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil))
+(jump_insn 39 38 40 6 (set (pc)
+        (label_ref 103)) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil)
+ -> 103)
+(barrier 40 39 105)
+(code_label 105 40 41 7 13 (nil) [1 uses])
+(note 41 105 42 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 7 (set (reg:SI 96)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":93 -1
+     (nil))
+(insn 43 42 44 7 (set (reg:SI 98)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":93 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:SI 97)
+        (ashift:SI (reg:SI 98)
+            (subreg:QI (reg:SI 96) 0))) "../Peripheral/src/ch32v00x_gpio.c":93 -1
+     (nil))
+(insn 45 44 46 7 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])
+        (reg:SI 97)) "../Peripheral/src/ch32v00x_gpio.c":93 -1
+     (nil))
+(insn 46 45 47 7 (set (reg/f:SI 99)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":94 -1
+     (nil))
+(insn 47 46 48 7 (set (reg:SI 79 [ _8 ])
+        (zero_extend:SI (mem:HI (reg/f:SI 99) [4 GPIO_InitStruct_30(D)->GPIO_Pin+0 S2 A32]))) "../Peripheral/src/ch32v00x_gpio.c":94 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:SI 80 [ _9 ])
+        (reg:SI 79 [ _8 ])) "../Peripheral/src/ch32v00x_gpio.c":94 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:SI 101)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":94 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:SI 100)
+        (and:SI (reg:SI 101)
+            (reg:SI 80 [ _9 ]))) "../Peripheral/src/ch32v00x_gpio.c":94 -1
+     (nil))
+(insn 51 50 52 7 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 currentpin+0 S4 A32])
+        (reg:SI 100)) "../Peripheral/src/ch32v00x_gpio.c":94 -1
+     (nil))
+(insn 52 51 53 7 (set (reg:SI 102)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 currentpin+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":96 -1
+     (nil))
+(insn 53 52 54 7 (set (reg:SI 103)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":96 -1
+     (nil))
+(jump_insn 54 53 55 7 (set (pc)
+        (if_then_else (ne (reg:SI 102)
+                (reg:SI 103))
+            (label_ref 98)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":96 -1
+     (nil)
+ -> 98)
+(note 55 54 56 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 8 (set (reg:SI 105)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":98 -1
+     (nil))
+(insn 57 56 58 8 (set (reg:SI 104)
+        (ashift:SI (reg:SI 105)
+            (const_int 2 [0x2]))) "../Peripheral/src/ch32v00x_gpio.c":98 -1
+     (nil))
+(insn 58 57 59 8 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])
+        (reg:SI 104)) "../Peripheral/src/ch32v00x_gpio.c":98 -1
+     (nil))
+(insn 59 58 60 8 (set (reg:SI 106)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":99 -1
+     (nil))
+(insn 60 59 61 8 (set (reg:SI 108)
+        (const_int 15 [0xf])) "../Peripheral/src/ch32v00x_gpio.c":99 -1
+     (nil))
+(insn 61 60 62 8 (set (reg:SI 107)
+        (ashift:SI (reg:SI 108)
+            (subreg:QI (reg:SI 106) 0))) "../Peripheral/src/ch32v00x_gpio.c":99 -1
+     (nil))
+(insn 62 61 63 8 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 pinmask+0 S4 A32])
+        (reg:SI 107)) "../Peripheral/src/ch32v00x_gpio.c":99 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 109)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 pinmask+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":100 -1
+     (nil))
+(insn 64 63 65 8 (set (reg:SI 81 [ _10 ])
+        (not:SI (reg:SI 109))) "../Peripheral/src/ch32v00x_gpio.c":100 -1
+     (nil))
+(insn 65 64 66 8 (set (reg:SI 111)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":100 -1
+     (nil))
+(insn 66 65 67 8 (set (reg:SI 110)
+        (and:SI (reg:SI 111)
+            (reg:SI 81 [ _10 ]))) "../Peripheral/src/ch32v00x_gpio.c":100 -1
+     (nil))
+(insn 67 66 68 8 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 110)) "../Peripheral/src/ch32v00x_gpio.c":100 -1
+     (nil))
+(insn 68 67 69 8 (set (reg:SI 112)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 pos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":101 -1
+     (nil))
+(insn 69 68 70 8 (set (reg:SI 113)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 currentmode+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":101 -1
+     (nil))
+(insn 70 69 71 8 (set (reg:SI 82 [ _11 ])
+        (ashift:SI (reg:SI 113)
+            (subreg:QI (reg:SI 112) 0))) "../Peripheral/src/ch32v00x_gpio.c":101 -1
+     (nil))
+(insn 71 70 72 8 (set (reg:SI 115)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":101 -1
+     (nil))
+(insn 72 71 73 8 (set (reg:SI 114)
+        (ior:SI (reg:SI 115)
+            (reg:SI 82 [ _11 ]))) "../Peripheral/src/ch32v00x_gpio.c":101 -1
+     (nil))
+(insn 73 72 74 8 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 114)) "../Peripheral/src/ch32v00x_gpio.c":101 -1
+     (nil))
+(insn 74 73 75 8 (set (reg/f:SI 116)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":103 -1
+     (nil))
+(insn 75 74 76 8 (set (reg:SI 83 [ _12 ])
+        (mem:SI (plus:SI (reg/f:SI 116)
+                (const_int 8 [0x8])) [6 GPIO_InitStruct_30(D)->GPIO_Mode+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":103 -1
+     (nil))
+(insn 76 75 77 8 (set (reg:SI 117)
+        (const_int 40 [0x28])) "../Peripheral/src/ch32v00x_gpio.c":103 -1
+     (nil))
+(jump_insn 77 76 78 8 (set (pc)
+        (if_then_else (ne (reg:SI 83 [ _12 ])
+                (reg:SI 117))
+            (label_ref 86)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":103 -1
+     (nil)
+ -> 86)
+(note 78 77 79 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 9 (set (reg:SI 118)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":105 -1
+     (nil))
+(insn 80 79 81 9 (set (reg:SI 119)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":105 -1
+     (nil))
+(insn 81 80 82 9 (set (reg:SI 84 [ _13 ])
+        (ashift:SI (reg:SI 119)
+            (subreg:QI (reg:SI 118) 0))) "../Peripheral/src/ch32v00x_gpio.c":105 -1
+     (nil))
+(insn 82 81 83 9 (set (reg/f:SI 120)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":105 -1
+     (nil))
+(insn 83 82 84 9 (set (mem/v:SI (plus:SI (reg/f:SI 120)
+                (const_int 20 [0x14])) [2 GPIOx_33(D)->BCR+0 S4 A32])
+        (reg:SI 84 [ _13 ])) "../Peripheral/src/ch32v00x_gpio.c":105 -1
+     (nil))
+(jump_insn 84 83 85 9 (set (pc)
+        (label_ref 98)) -1
+     (nil)
+ -> 98)
+(barrier 85 84 86)
+(code_label 86 85 87 10 12 (nil) [1 uses])
+(note 87 86 88 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 10 (set (reg/f:SI 121)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":109 -1
+     (nil))
+(insn 89 88 90 10 (set (reg:SI 85 [ _14 ])
+        (mem:SI (plus:SI (reg/f:SI 121)
+                (const_int 8 [0x8])) [6 GPIO_InitStruct_30(D)->GPIO_Mode+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":109 -1
+     (nil))
+(insn 90 89 91 10 (set (reg:SI 122)
+        (const_int 72 [0x48])) "../Peripheral/src/ch32v00x_gpio.c":109 -1
+     (nil))
+(jump_insn 91 90 92 10 (set (pc)
+        (if_then_else (ne (reg:SI 85 [ _14 ])
+                (reg:SI 122))
+            (label_ref 98)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":109 -1
+     (nil)
+ -> 98)
+(note 92 91 93 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 93 92 94 11 (set (reg:SI 123)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":111 -1
+     (nil))
+(insn 94 93 95 11 (set (reg:SI 124)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":111 -1
+     (nil))
+(insn 95 94 96 11 (set (reg:SI 86 [ _15 ])
+        (ashift:SI (reg:SI 124)
+            (subreg:QI (reg:SI 123) 0))) "../Peripheral/src/ch32v00x_gpio.c":111 -1
+     (nil))
+(insn 96 95 97 11 (set (reg/f:SI 125)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":111 -1
+     (nil))
+(insn 97 96 98 11 (set (mem/v:SI (plus:SI (reg/f:SI 125)
+                (const_int 16 [0x10])) [2 GPIOx_33(D)->BSHR+0 S4 A32])
+        (reg:SI 86 [ _15 ])) "../Peripheral/src/ch32v00x_gpio.c":111 -1
+     (nil))
+(code_label 98 97 99 12 11 (nil) [3 uses])
+(note 99 98 100 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 12 (set (reg:SI 127)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil))
+(insn 101 100 102 12 (set (reg:SI 126)
+        (plus:SI (reg:SI 127)
+            (const_int 1 [0x1]))) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil))
+(insn 102 101 103 12 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])
+        (reg:SI 126)) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil))
+(code_label 103 102 104 13 10 (nil) [1 uses])
+(note 104 103 106 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 106 104 107 13 (set (reg:SI 128)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 pinpos+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil))
+(insn 107 106 108 13 (set (reg:SI 129)
+        (const_int 7 [0x7])) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil))
+(jump_insn 108 107 109 13 (set (pc)
+        (if_then_else (leu (reg:SI 128)
+                (reg:SI 129))
+            (label_ref 105)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":91 -1
+     (nil)
+ -> 105)
+(note 109 108 110 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 111 14 (set (reg/f:SI 130)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":116 -1
+     (nil))
+(insn 111 110 112 14 (set (reg:SI 131)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":116 -1
+     (nil))
+(insn 112 111 115 14 (set (mem/v:SI (reg/f:SI 130) [2 GPIOx_33(D)->CFGLR+0 S4 A32])
+        (reg:SI 131)) "../Peripheral/src/ch32v00x_gpio.c":116 -1
+     (nil))
+(code_label 115 112 116 16 7 (nil) [1 uses])
+(note 116 115 0 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+
+;; Function GPIO_StructInit (GPIO_StructInit, funcdef_no=24, decl_uid=4008, cgraph_uid=25, symbol_order=25)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [9 GPIO_InitStruct+0 S4 A32])
+        (reg:SI 10 a0 [ GPIO_InitStruct ])) "../Peripheral/src/ch32v00x_gpio.c":131 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:SI 72)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":132 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:HI 73)
+        (const_int -1 [0xffffffffffffffff])) "../Peripheral/src/ch32v00x_gpio.c":132 -1
+     (nil))
+(insn 8 7 9 2 (set (mem:HI (reg/f:SI 72) [4 GPIO_InitStruct_2(D)->GPIO_Pin+0 S2 A32])
+        (reg:HI 73)) "../Peripheral/src/ch32v00x_gpio.c":132 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 74)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":133 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 75)
+        (const_int 2 [0x2])) "../Peripheral/src/ch32v00x_gpio.c":133 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:SI (plus:SI (reg/f:SI 74)
+                (const_int 4 [0x4])) [5 GPIO_InitStruct_2(D)->GPIO_Speed+0 S4 A32])
+        (reg:SI 75)) "../Peripheral/src/ch32v00x_gpio.c":133 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 76)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [9 GPIO_InitStruct+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":134 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 77)
+        (const_int 4 [0x4])) "../Peripheral/src/ch32v00x_gpio.c":134 -1
+     (nil))
+(insn 14 13 17 2 (set (mem:SI (plus:SI (reg/f:SI 76)
+                (const_int 8 [0x8])) [6 GPIO_InitStruct_2(D)->GPIO_Mode+0 S4 A32])
+        (reg:SI 77)) "../Peripheral/src/ch32v00x_gpio.c":134 -1
+     (nil))
+(insn 17 14 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":135 -1
+     (nil))
+
+;; Function GPIO_ReadInputDataBit (GPIO_ReadInputDataBit, funcdef_no=25, decl_uid=4011, cgraph_uid=26, symbol_order=26)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 29.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":148 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 77)
+        (reg:SI 11 a1 [ GPIO_Pin ])) "../Peripheral/src/ch32v00x_gpio.c":148 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:HI 78)
+        (subreg:HI (reg:SI 77) 0)) "../Peripheral/src/ch32v00x_gpio.c":148 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16])
+        (reg:HI 78)) "../Peripheral/src/ch32v00x_gpio.c":148 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":149 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 79)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":151 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 8 [0x8])) [2 GPIOx_7(D)->INDR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":151 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":151 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 74 [ _3 ])
+        (and:SI (reg:SI 72 [ _1 ])
+            (reg:SI 73 [ _2 ]))) "../Peripheral/src/ch32v00x_gpio.c":151 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg:SI 74 [ _3 ])
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":151 -1
+     (nil)
+ -> 20)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg:QI 80)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":153 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8])
+        (reg:QI 80)) "../Peripheral/src/ch32v00x_gpio.c":153 -1
+     (nil))
+(jump_insn 18 17 19 4 (set (pc)
+        (label_ref 23)) -1
+     (nil)
+ -> 23)
+(barrier 19 18 20)
+(code_label 20 19 21 5 17 (nil) [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":157 -1
+     (nil))
+(code_label 23 22 24 6 18 (nil) [1 uses])
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 28 6 (set (reg:SI 75 [ _11 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8]))) "../Peripheral/src/ch32v00x_gpio.c":160 -1
+     (nil))
+(insn 28 25 32 6 (set (reg:SI 76 [ <retval> ])
+        (reg:SI 75 [ _11 ])) "../Peripheral/src/ch32v00x_gpio.c":160 -1
+     (nil))
+(insn 32 28 33 6 (set (reg/i:SI 10 a0)
+        (reg:SI 76 [ <retval> ])) "../Peripheral/src/ch32v00x_gpio.c":161 -1
+     (nil))
+(insn 33 32 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v00x_gpio.c":161 -1
+     (nil))
+
+;; Function GPIO_ReadInputData (GPIO_ReadInputData, funcdef_no=26, decl_uid=4013, cgraph_uid=27, symbol_order=27)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":173 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:SI 75)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":174 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 8 [0x8])) [2 GPIOx_3(D)->INDR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":174 -1
+     (nil))
+(insn 8 7 11 2 (set (reg:SI 73 [ _4 ])
+        (zero_extend:SI (subreg:HI (reg:SI 72 [ _1 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":174 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:SI 74 [ <retval> ])
+        (reg:SI 73 [ _4 ])) "../Peripheral/src/ch32v00x_gpio.c":174 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 10 a0)
+        (reg:SI 74 [ <retval> ])) "../Peripheral/src/ch32v00x_gpio.c":175 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v00x_gpio.c":175 -1
+     (nil))
+
+;; Function GPIO_ReadOutputDataBit (GPIO_ReadOutputDataBit, funcdef_no=27, decl_uid=4016, cgraph_uid=28, symbol_order=28)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 29.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":189 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 77)
+        (reg:SI 11 a1 [ GPIO_Pin ])) "../Peripheral/src/ch32v00x_gpio.c":189 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:HI 78)
+        (subreg:HI (reg:SI 77) 0)) "../Peripheral/src/ch32v00x_gpio.c":189 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16])
+        (reg:HI 78)) "../Peripheral/src/ch32v00x_gpio.c":189 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":190 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 79)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":192 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 12 [0xc])) [2 GPIOx_7(D)->OUTDR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":192 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":192 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 74 [ _3 ])
+        (and:SI (reg:SI 72 [ _1 ])
+            (reg:SI 73 [ _2 ]))) "../Peripheral/src/ch32v00x_gpio.c":192 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg:SI 74 [ _3 ])
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":192 -1
+     (nil)
+ -> 20)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg:QI 80)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":194 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8])
+        (reg:QI 80)) "../Peripheral/src/ch32v00x_gpio.c":194 -1
+     (nil))
+(jump_insn 18 17 19 4 (set (pc)
+        (label_ref 23)) -1
+     (nil)
+ -> 23)
+(barrier 19 18 20)
+(code_label 20 19 21 5 23 (nil) [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":198 -1
+     (nil))
+(code_label 23 22 24 6 24 (nil) [1 uses])
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 28 6 (set (reg:SI 75 [ _11 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -1 [0xffffffffffffffff])) [0 bitstatus+0 S1 A8]))) "../Peripheral/src/ch32v00x_gpio.c":201 -1
+     (nil))
+(insn 28 25 32 6 (set (reg:SI 76 [ <retval> ])
+        (reg:SI 75 [ _11 ])) "../Peripheral/src/ch32v00x_gpio.c":201 -1
+     (nil))
+(insn 32 28 33 6 (set (reg/i:SI 10 a0)
+        (reg:SI 76 [ <retval> ])) "../Peripheral/src/ch32v00x_gpio.c":202 -1
+     (nil))
+(insn 33 32 0 6 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v00x_gpio.c":202 -1
+     (nil))
+
+;; Function GPIO_ReadOutputData (GPIO_ReadOutputData, funcdef_no=28, decl_uid=4018, cgraph_uid=29, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":214 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:SI 75)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":215 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 72 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 12 [0xc])) [2 GPIOx_3(D)->OUTDR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":215 -1
+     (nil))
+(insn 8 7 11 2 (set (reg:SI 73 [ _4 ])
+        (zero_extend:SI (subreg:HI (reg:SI 72 [ _1 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":215 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:SI 74 [ <retval> ])
+        (reg:SI 73 [ _4 ])) "../Peripheral/src/ch32v00x_gpio.c":215 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 10 a0)
+        (reg:SI 74 [ <retval> ])) "../Peripheral/src/ch32v00x_gpio.c":216 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 10 a0)) "../Peripheral/src/ch32v00x_gpio.c":216 -1
+     (nil))
+
+;; Function GPIO_SetBits (GPIO_SetBits, funcdef_no=29, decl_uid=4021, cgraph_uid=30, symbol_order=30)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":230 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 73)
+        (reg:SI 11 a1 [ GPIO_Pin ])) "../Peripheral/src/ch32v00x_gpio.c":230 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:HI 74)
+        (subreg:HI (reg:SI 73) 0)) "../Peripheral/src/ch32v00x_gpio.c":230 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16])
+        (reg:HI 74)) "../Peripheral/src/ch32v00x_gpio.c":230 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":231 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 75)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":231 -1
+     (nil))
+(insn 11 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 16 [0x10])) [2 GPIOx_4(D)->BSHR+0 S4 A32])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v00x_gpio.c":231 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":232 -1
+     (nil))
+
+;; Function GPIO_ResetBits (GPIO_ResetBits, funcdef_no=30, decl_uid=4024, cgraph_uid=31, symbol_order=31)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":246 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 73)
+        (reg:SI 11 a1 [ GPIO_Pin ])) "../Peripheral/src/ch32v00x_gpio.c":246 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:HI 74)
+        (subreg:HI (reg:SI 73) 0)) "../Peripheral/src/ch32v00x_gpio.c":246 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16])
+        (reg:HI 74)) "../Peripheral/src/ch32v00x_gpio.c":246 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":247 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 75)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":247 -1
+     (nil))
+(insn 11 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 20 [0x14])) [2 GPIOx_4(D)->BCR+0 S4 A32])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v00x_gpio.c":247 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":248 -1
+     (nil))
+
+;; Function GPIO_WriteBit (GPIO_WriteBit, funcdef_no=31, decl_uid=4028, cgraph_uid=32, symbol_order=32)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":264 -1
+     (nil))
+(insn 3 2 6 2 (set (reg:SI 74)
+        (reg:SI 11 a1 [ GPIO_Pin ])) "../Peripheral/src/ch32v00x_gpio.c":264 -1
+     (nil))
+(insn 6 3 4 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [10 BitVal+0 S4 A32])
+        (reg:SI 12 a2 [ BitVal ])) "../Peripheral/src/ch32v00x_gpio.c":264 -1
+     (nil))
+(insn 4 6 5 2 (set (reg:HI 75)
+        (subreg:HI (reg:SI 74) 0)) "../Peripheral/src/ch32v00x_gpio.c":264 -1
+     (nil))
+(insn 5 4 7 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16])
+        (reg:HI 75)) "../Peripheral/src/ch32v00x_gpio.c":264 -1
+     (nil))
+(note 7 5 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 7 11 2 (set (reg:SI 76)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [10 BitVal+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":265 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (eq (reg:SI 76)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":265 -1
+     (nil)
+ -> 18)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":267 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:SI 77)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":267 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/v:SI (plus:SI (reg/f:SI 77)
+                (const_int 16 [0x10])) [2 GPIOx_7(D)->BSHR+0 S4 A32])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v00x_gpio.c":267 -1
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (label_ref:SI 25)) 250 {jump}
+     (nil)
+ -> 25)
+(barrier 17 16 18)
+(code_label 18 17 19 5 31 (nil) [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 5 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":271 -1
+     (nil))
+(insn 21 20 22 5 (set (reg/f:SI 78)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":271 -1
+     (nil))
+(insn 22 21 25 5 (set (mem/v:SI (plus:SI (reg/f:SI 78)
+                (const_int 20 [0x14])) [2 GPIOx_7(D)->BCR+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v00x_gpio.c":271 -1
+     (nil))
+(code_label 25 22 26 7 30 (nil) [1 uses])
+(note 26 25 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function GPIO_Write (GPIO_Write, funcdef_no=32, decl_uid=4031, cgraph_uid=33, symbol_order=33)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":286 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 73)
+        (reg:SI 11 a1 [ PortVal ])) "../Peripheral/src/ch32v00x_gpio.c":286 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:HI 74)
+        (subreg:HI (reg:SI 73) 0)) "../Peripheral/src/ch32v00x_gpio.c":286 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [4 PortVal+0 S2 A16])
+        (reg:HI 74)) "../Peripheral/src/ch32v00x_gpio.c":286 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [4 PortVal+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":287 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 75)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":287 -1
+     (nil))
+(insn 11 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 75)
+                (const_int 12 [0xc])) [2 GPIOx_4(D)->OUTDR+0 S4 A32])
+        (reg:SI 72 [ _1 ])) "../Peripheral/src/ch32v00x_gpio.c":287 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":288 -1
+     (nil))
+
+;; Function GPIO_PinLockConfig (GPIO_PinLockConfig, funcdef_no=33, decl_uid=4034, cgraph_uid=34, symbol_order=34)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])
+        (reg:SI 10 a0 [ GPIOx ])) "../Peripheral/src/ch32v00x_gpio.c":302 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 74)
+        (reg:SI 11 a1 [ GPIO_Pin ])) "../Peripheral/src/ch32v00x_gpio.c":302 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:HI 75)
+        (subreg:HI (reg:SI 74) 0)) "../Peripheral/src/ch32v00x_gpio.c":302 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16])
+        (reg:HI 75)) "../Peripheral/src/ch32v00x_gpio.c":302 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 76)
+        (const_int 65536 [0x10000])) "../Peripheral/src/ch32v00x_gpio.c":303 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (reg:SI 76)) "../Peripheral/src/ch32v00x_gpio.c":303 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":305 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 78)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":305 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 77)
+        (ior:SI (reg:SI 78)
+            (reg:SI 72 [ _1 ]))) "../Peripheral/src/ch32v00x_gpio.c":305 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (reg:SI 77)) "../Peripheral/src/ch32v00x_gpio.c":305 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 79)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":306 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 80)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":306 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/v:SI (plus:SI (reg/f:SI 79)
+                (const_int 24 [0x18])) [2 GPIOx_7(D)->LCKR+0 S4 A32])
+        (reg:SI 80)) "../Peripheral/src/ch32v00x_gpio.c":306 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 73 [ _2 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [4 GPIO_Pin+0 S2 A16]))) "../Peripheral/src/ch32v00x_gpio.c":307 -1
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 81)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":307 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/v:SI (plus:SI (reg/f:SI 81)
+                (const_int 24 [0x18])) [2 GPIOx_7(D)->LCKR+0 S4 A32])
+        (reg:SI 73 [ _2 ])) "../Peripheral/src/ch32v00x_gpio.c":307 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/f:SI 82)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":308 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 83)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":308 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/v:SI (plus:SI (reg/f:SI 82)
+                (const_int 24 [0x18])) [2 GPIOx_7(D)->LCKR+0 S4 A32])
+        (reg:SI 83)) "../Peripheral/src/ch32v00x_gpio.c":308 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 84)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":309 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 85)
+        (mem/v:SI (plus:SI (reg/f:SI 84)
+                (const_int 24 [0x18])) [2 GPIOx_7(D)->LCKR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":309 -1
+     (nil))
+(insn 26 25 27 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (reg:SI 85)) "../Peripheral/src/ch32v00x_gpio.c":309 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/f:SI 86)
+        (mem/f/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [7 GPIOx+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":310 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 87)
+        (mem/v:SI (plus:SI (reg/f:SI 86)
+                (const_int 24 [0x18])) [2 GPIOx_7(D)->LCKR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":310 -1
+     (nil))
+(insn 29 28 32 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (reg:SI 87)) "../Peripheral/src/ch32v00x_gpio.c":310 -1
+     (nil))
+(insn 32 29 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":311 -1
+     (nil))
+
+;; Function GPIO_PinRemapConfig (GPIO_PinRemapConfig, funcdef_no=34, decl_uid=4042, cgraph_uid=35, symbol_order=35)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 4->6 redirected to 21
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Edge 8->10 redirected to 21
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Edge 12->14 redirected to 21
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Edge 16->18 redirected to 21
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+Merging block 22 into block 21...
+Merged blocks 21 and 22.
+Merged 21 and 22 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])
+        (reg:SI 10 a0 [ GPIO_Remap ])) "../Peripheral/src/ch32v00x_gpio.c":341 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [11 NewState+0 S4 A32])
+        (reg:SI 11 a1 [ NewState ])) "../Peripheral/src/ch32v00x_gpio.c":341 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 tmp+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":342 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmp1+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":342 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":342 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 tmpmask+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":342 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 72 [ _1 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":344 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 99)
+        (mem/v:SI (plus:SI (reg/f:SI 72 [ _1 ])
+                (const_int 4 [0x4])) [2 _1->PCFR1+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":344 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 99)) "../Peripheral/src/ch32v00x_gpio.c":344 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 100)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":346 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 73 [ _2 ])
+        (lshiftrt:SI (reg:SI 100)
+            (const_int 16 [0x10]))) "../Peripheral/src/ch32v00x_gpio.c":346 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 101)
+        (and:SI (reg:SI 73 [ _2 ])
+            (const_int 15 [0xf]))) "../Peripheral/src/ch32v00x_gpio.c":346 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 tmpmask+0 S4 A32])
+        (reg:SI 101)) "../Peripheral/src/ch32v00x_gpio.c":346 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 103)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":347 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 105)
+        (const_int 65536 [0x10000])) "../Peripheral/src/ch32v00x_gpio.c":347 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 104)
+        (plus:SI (reg:SI 105)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v00x_gpio.c":347 -1
+     (expr_list:REG_EQUAL (const_int 65535 [0xffff])
+        (nil)))
+(insn 21 20 22 2 (set (reg:SI 102)
+        (and:SI (reg:SI 103)
+            (reg:SI 104))) "../Peripheral/src/ch32v00x_gpio.c":347 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 tmp+0 S4 A32])
+        (reg:SI 102)) "../Peripheral/src/ch32v00x_gpio.c":347 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 106)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":349 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 107)
+        (const_int 268435456 [0x10000000])) "../Peripheral/src/ch32v00x_gpio.c":349 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 74 [ _3 ])
+        (and:SI (reg:SI 106)
+            (reg:SI 107))) "../Peripheral/src/ch32v00x_gpio.c":349 -1
+     (nil))
+(jump_insn 26 25 27 2 (set (pc)
+        (if_then_else (eq (reg:SI 74 [ _3 ])
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":349 -1
+     (nil)
+ -> 51)
+(note 27 26 28 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 4 (set (reg:SI 109)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":351 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:SI 111)
+        (const_int -4194304 [0xffffffffffc00000])) "../Peripheral/src/ch32v00x_gpio.c":351 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:SI 110)
+        (plus:SI (reg:SI 111)
+            (const_int -3 [0xfffffffffffffffd]))) "../Peripheral/src/ch32v00x_gpio.c":351 -1
+     (expr_list:REG_EQUAL (const_int -4194307 [0xffffffffffbffffd])
+        (nil)))
+(insn 31 30 32 4 (set (reg:SI 108)
+        (and:SI (reg:SI 109)
+            (reg:SI 110))) "../Peripheral/src/ch32v00x_gpio.c":351 -1
+     (nil))
+(insn 32 31 33 4 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 108)) "../Peripheral/src/ch32v00x_gpio.c":351 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:SI 113)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":352 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:SI 114)
+        (const_int 117440512 [0x7000000])) "../Peripheral/src/ch32v00x_gpio.c":352 -1
+     (nil))
+(insn 35 34 36 4 (set (reg:SI 112)
+        (ior:SI (reg:SI 113)
+            (reg:SI 114))) "../Peripheral/src/ch32v00x_gpio.c":352 -1
+     (nil))
+(insn 36 35 37 4 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 112)) "../Peripheral/src/ch32v00x_gpio.c":352 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:SI 115)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [11 NewState+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":353 -1
+     (nil))
+(jump_insn 38 37 39 4 (set (pc)
+        (if_then_else (eq (reg:SI 115)
+                (const_int 0 [0]))
+            (label_ref:SI 175)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":353 180 {*branchsi}
+     (nil)
+ -> 175)
+(note 39 38 40 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 5 (set (reg:SI 116)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:SI 118)
+        (const_int -268435456 [0xfffffffff0000000])) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:SI 117)
+        (plus:SI (reg:SI 118)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (expr_list:REG_EQUAL (const_int -268435457 [0xffffffffefffffff])
+        (nil)))
+(insn 43 42 44 5 (set (reg:SI 75 [ _4 ])
+        (and:SI (reg:SI 116)
+            (reg:SI 117))) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (nil))
+(insn 44 43 45 5 (set (reg:SI 120)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:SI 119)
+        (ior:SI (reg:SI 120)
+            (reg:SI 75 [ _4 ]))) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (nil))
+(insn 46 45 49 5 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 119)) "../Peripheral/src/ch32v00x_gpio.c":355 -1
+     (nil))
+(jump_insn 49 46 50 5 (set (pc)
+        (label_ref 175)) -1
+     (nil)
+ -> 175)
+(barrier 50 49 51)
+(code_label 51 50 52 7 37 (nil) [1 uses])
+(note 52 51 53 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 7 (set (reg:SI 76 [ GPIO_Remap.0_5 ])
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":359 -1
+     (nil))
+(jump_insn 54 53 55 7 (set (pc)
+        (if_then_else (ge (reg:SI 76 [ GPIO_Remap.0_5 ])
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":359 -1
+     (nil)
+ -> 79)
+(note 55 54 56 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 8 (set (reg:SI 122)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":361 -1
+     (nil))
+(insn 57 56 58 8 (set (reg:SI 124)
+        (const_int -2097152 [0xffffffffffe00000])) "../Peripheral/src/ch32v00x_gpio.c":361 -1
+     (nil))
+(insn 58 57 59 8 (set (reg:SI 123)
+        (plus:SI (reg:SI 124)
+            (const_int -5 [0xfffffffffffffffb]))) "../Peripheral/src/ch32v00x_gpio.c":361 -1
+     (expr_list:REG_EQUAL (const_int -2097157 [0xffffffffffdffffb])
+        (nil)))
+(insn 59 58 60 8 (set (reg:SI 121)
+        (and:SI (reg:SI 122)
+            (reg:SI 123))) "../Peripheral/src/ch32v00x_gpio.c":361 -1
+     (nil))
+(insn 60 59 61 8 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 121)) "../Peripheral/src/ch32v00x_gpio.c":361 -1
+     (nil))
+(insn 61 60 62 8 (set (reg:SI 126)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":362 -1
+     (nil))
+(insn 62 61 63 8 (set (reg:SI 127)
+        (const_int 117440512 [0x7000000])) "../Peripheral/src/ch32v00x_gpio.c":362 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 125)
+        (ior:SI (reg:SI 126)
+            (reg:SI 127))) "../Peripheral/src/ch32v00x_gpio.c":362 -1
+     (nil))
+(insn 64 63 65 8 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 125)) "../Peripheral/src/ch32v00x_gpio.c":362 -1
+     (nil))
+(insn 65 64 66 8 (set (reg:SI 128)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [11 NewState+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":363 -1
+     (nil))
+(jump_insn 66 65 67 8 (set (pc)
+        (if_then_else (eq (reg:SI 128)
+                (const_int 0 [0]))
+            (label_ref:SI 175)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":363 180 {*branchsi}
+     (nil)
+ -> 175)
+(note 67 66 68 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 69 9 (set (reg:SI 129)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (nil))
+(insn 69 68 70 9 (set (reg:SI 131)
+        (const_int -2147483648 [0xffffffff80000000])) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:SI 130)
+        (xor:SI (reg:SI 131)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (expr_list:REG_EQUAL (const_int 2147483647 [0x7fffffff])
+        (nil)))
+(insn 71 70 72 9 (set (reg:SI 77 [ _6 ])
+        (and:SI (reg:SI 129)
+            (reg:SI 130))) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:SI 133)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (nil))
+(insn 73 72 74 9 (set (reg:SI 132)
+        (ior:SI (reg:SI 133)
+            (reg:SI 77 [ _6 ]))) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (nil))
+(insn 74 73 77 9 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 132)) "../Peripheral/src/ch32v00x_gpio.c":365 -1
+     (nil))
+(jump_insn 77 74 78 9 (set (pc)
+        (label_ref 175)) -1
+     (nil)
+ -> 175)
+(barrier 78 77 79)
+(code_label 79 78 80 11 40 (nil) [1 uses])
+(note 80 79 81 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 82 11 (set (reg:SI 134)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":369 -1
+     (nil))
+(insn 82 81 83 11 (set (reg:SI 135)
+        (const_int 3145728 [0x300000])) "../Peripheral/src/ch32v00x_gpio.c":369 -1
+     (nil))
+(insn 83 82 84 11 (set (reg:SI 78 [ _7 ])
+        (and:SI (reg:SI 134)
+            (reg:SI 135))) "../Peripheral/src/ch32v00x_gpio.c":369 -1
+     (nil))
+(insn 84 83 85 11 (set (reg:SI 136)
+        (const_int 3145728 [0x300000])) "../Peripheral/src/ch32v00x_gpio.c":369 -1
+     (nil))
+(jump_insn 85 84 86 11 (set (pc)
+        (if_then_else (ne (reg:SI 78 [ _7 ])
+                (reg:SI 136))
+            (label_ref 114)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":369 -1
+     (nil)
+ -> 114)
+(note 86 85 87 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 12 (set (reg:SI 138)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":371 -1
+     (nil))
+(insn 88 87 89 12 (set (reg:SI 140)
+        (const_int -117440512 [0xfffffffff9000000])) "../Peripheral/src/ch32v00x_gpio.c":371 -1
+     (nil))
+(insn 89 88 90 12 (set (reg:SI 139)
+        (plus:SI (reg:SI 140)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v00x_gpio.c":371 -1
+     (expr_list:REG_EQUAL (const_int -117440513 [0xfffffffff8ffffff])
+        (nil)))
+(insn 90 89 91 12 (set (reg:SI 137)
+        (and:SI (reg:SI 138)
+            (reg:SI 139))) "../Peripheral/src/ch32v00x_gpio.c":371 -1
+     (nil))
+(insn 91 90 92 12 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 137)) "../Peripheral/src/ch32v00x_gpio.c":371 -1
+     (nil))
+(insn 92 91 93 12 (set (reg/f:SI 79 [ _8 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (nil))
+(insn 93 92 94 12 (set (reg:SI 80 [ _9 ])
+        (mem/v:SI (plus:SI (reg/f:SI 79 [ _8 ])
+                (const_int 4 [0x4])) [2 _8->PCFR1+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (nil))
+(insn 94 93 95 12 (set (reg/f:SI 81 [ _10 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (nil))
+(insn 95 94 96 12 (set (reg:SI 142)
+        (const_int -117440512 [0xfffffffff9000000])) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (nil))
+(insn 96 95 97 12 (set (reg:SI 141)
+        (plus:SI (reg:SI 142)
+            (const_int -1 [0xffffffffffffffff]))) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (expr_list:REG_EQUAL (const_int -117440513 [0xfffffffff8ffffff])
+        (nil)))
+(insn 97 96 98 12 (set (reg:SI 82 [ _11 ])
+        (and:SI (reg:SI 80 [ _9 ])
+            (reg:SI 141))) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (nil))
+(insn 98 97 99 12 (set (mem/v:SI (plus:SI (reg/f:SI 81 [ _10 ])
+                (const_int 4 [0x4])) [2 _10->PCFR1+0 S4 A32])
+        (reg:SI 82 [ _11 ])) "../Peripheral/src/ch32v00x_gpio.c":372 -1
+     (nil))
+(insn 99 98 100 12 (set (reg:SI 143)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [11 NewState+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":374 -1
+     (nil))
+(jump_insn 100 99 101 12 (set (pc)
+        (if_then_else (eq (reg:SI 143)
+                (const_int 0 [0]))
+            (label_ref:SI 175)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":374 180 {*branchsi}
+     (nil)
+ -> 175)
+(note 101 100 102 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 13 (set (reg:SI 144)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 103 102 104 13 (set (reg:SI 83 [ _12 ])
+        (lshiftrt:SI (reg:SI 144)
+            (const_int 21 [0x15]))) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 104 103 105 13 (set (reg:SI 84 [ _13 ])
+        (ashift:SI (reg:SI 83 [ _12 ])
+            (const_int 4 [0x4]))) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 105 104 106 13 (set (reg:SI 145)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 106 105 107 13 (set (reg:SI 85 [ _14 ])
+        (ashift:SI (reg:SI 145)
+            (subreg:QI (reg:SI 84 [ _13 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 107 106 108 13 (set (reg:SI 147)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 108 107 109 13 (set (reg:SI 146)
+        (ior:SI (reg:SI 147)
+            (reg:SI 85 [ _14 ]))) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(insn 109 108 112 13 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 146)) "../Peripheral/src/ch32v00x_gpio.c":376 -1
+     (nil))
+(jump_insn 112 109 113 13 (set (pc)
+        (label_ref 175)) -1
+     (nil)
+ -> 175)
+(barrier 113 112 114)
+(code_label 114 113 115 15 42 (nil) [1 uses])
+(note 115 114 116 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 116 115 117 15 (set (reg:SI 148)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":379 -1
+     (nil))
+(insn 117 116 118 15 (set (reg:SI 149)
+        (const_int 1048576 [0x100000])) "../Peripheral/src/ch32v00x_gpio.c":379 -1
+     (nil))
+(insn 118 117 119 15 (set (reg:SI 86 [ _15 ])
+        (and:SI (reg:SI 148)
+            (reg:SI 149))) "../Peripheral/src/ch32v00x_gpio.c":379 -1
+     (nil))
+(jump_insn 119 118 120 15 (set (pc)
+        (if_then_else (eq (reg:SI 86 [ _15 ])
+                (const_int 0 [0]))
+            (label_ref 149)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":379 -1
+     (nil)
+ -> 149)
+(note 120 119 121 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 121 120 122 16 (set (reg:SI 150)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 tmpmask+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":381 -1
+     (nil))
+(insn 122 121 123 16 (set (reg:SI 152)
+        (const_int 3 [0x3])) "../Peripheral/src/ch32v00x_gpio.c":381 -1
+     (nil))
+(insn 123 122 124 16 (set (reg:SI 151)
+        (ashift:SI (reg:SI 152)
+            (subreg:QI (reg:SI 150) 0))) "../Peripheral/src/ch32v00x_gpio.c":381 -1
+     (nil))
+(insn 124 123 125 16 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmp1+0 S4 A32])
+        (reg:SI 151)) "../Peripheral/src/ch32v00x_gpio.c":381 -1
+     (nil))
+(insn 125 124 126 16 (set (reg:SI 153)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 tmp1+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":382 -1
+     (nil))
+(insn 126 125 127 16 (set (reg:SI 87 [ _16 ])
+        (not:SI (reg:SI 153))) "../Peripheral/src/ch32v00x_gpio.c":382 -1
+     (nil))
+(insn 127 126 128 16 (set (reg:SI 155)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":382 -1
+     (nil))
+(insn 128 127 129 16 (set (reg:SI 154)
+        (and:SI (reg:SI 155)
+            (reg:SI 87 [ _16 ]))) "../Peripheral/src/ch32v00x_gpio.c":382 -1
+     (nil))
+(insn 129 128 130 16 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 154)) "../Peripheral/src/ch32v00x_gpio.c":382 -1
+     (nil))
+(insn 130 129 131 16 (set (reg:SI 157)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":383 -1
+     (nil))
+(insn 131 130 132 16 (set (reg:SI 158)
+        (const_int 117440512 [0x7000000])) "../Peripheral/src/ch32v00x_gpio.c":383 -1
+     (nil))
+(insn 132 131 133 16 (set (reg:SI 156)
+        (ior:SI (reg:SI 157)
+            (reg:SI 158))) "../Peripheral/src/ch32v00x_gpio.c":383 -1
+     (nil))
+(insn 133 132 134 16 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 156)) "../Peripheral/src/ch32v00x_gpio.c":383 -1
+     (nil))
+(insn 134 133 135 16 (set (reg:SI 159)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [11 NewState+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":385 -1
+     (nil))
+(jump_insn 135 134 136 16 (set (pc)
+        (if_then_else (eq (reg:SI 159)
+                (const_int 0 [0]))
+            (label_ref:SI 175)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":385 180 {*branchsi}
+     (nil)
+ -> 175)
+(note 136 135 137 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 137 136 138 17 (set (reg:SI 160)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 138 137 139 17 (set (reg:SI 88 [ _17 ])
+        (lshiftrt:SI (reg:SI 160)
+            (const_int 21 [0x15]))) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 139 138 140 17 (set (reg:SI 89 [ _18 ])
+        (ashift:SI (reg:SI 88 [ _17 ])
+            (const_int 4 [0x4]))) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 140 139 141 17 (set (reg:SI 161)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 141 140 142 17 (set (reg:SI 90 [ _19 ])
+        (ashift:SI (reg:SI 161)
+            (subreg:QI (reg:SI 89 [ _18 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 142 141 143 17 (set (reg:SI 163)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 143 142 144 17 (set (reg:SI 162)
+        (ior:SI (reg:SI 163)
+            (reg:SI 90 [ _19 ]))) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(insn 144 143 147 17 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 162)) "../Peripheral/src/ch32v00x_gpio.c":387 -1
+     (nil))
+(jump_insn 147 144 148 17 (set (pc)
+        (label_ref 175)) -1
+     (nil)
+ -> 175)
+(barrier 148 147 149)
+(code_label 149 148 150 19 44 (nil) [1 uses])
+(note 150 149 151 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 151 150 152 19 (set (reg:SI 164)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 152 151 153 19 (set (reg:SI 91 [ _20 ])
+        (lshiftrt:SI (reg:SI 164)
+            (const_int 21 [0x15]))) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 153 152 154 19 (set (reg:SI 92 [ _21 ])
+        (ashift:SI (reg:SI 91 [ _20 ])
+            (const_int 4 [0x4]))) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 154 153 155 19 (set (reg:SI 165)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 155 154 156 19 (set (reg:SI 93 [ _22 ])
+        (ashift:SI (reg:SI 165)
+            (subreg:QI (reg:SI 92 [ _21 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 156 155 157 19 (set (reg:SI 94 [ _23 ])
+        (not:SI (reg:SI 93 [ _22 ]))) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 157 156 158 19 (set (reg:SI 167)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 158 157 159 19 (set (reg:SI 166)
+        (and:SI (reg:SI 167)
+            (reg:SI 94 [ _23 ]))) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 159 158 160 19 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 166)) "../Peripheral/src/ch32v00x_gpio.c":392 -1
+     (nil))
+(insn 160 159 161 19 (set (reg:SI 169)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":393 -1
+     (nil))
+(insn 161 160 162 19 (set (reg:SI 170)
+        (const_int 117440512 [0x7000000])) "../Peripheral/src/ch32v00x_gpio.c":393 -1
+     (nil))
+(insn 162 161 163 19 (set (reg:SI 168)
+        (ior:SI (reg:SI 169)
+            (reg:SI 170))) "../Peripheral/src/ch32v00x_gpio.c":393 -1
+     (nil))
+(insn 163 162 164 19 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 168)) "../Peripheral/src/ch32v00x_gpio.c":393 -1
+     (nil))
+(insn 164 163 165 19 (set (reg:SI 171)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [11 NewState+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":395 -1
+     (nil))
+(jump_insn 165 164 166 19 (set (pc)
+        (if_then_else (eq (reg:SI 171)
+                (const_int 0 [0]))
+            (label_ref 175)
+            (pc))) "../Peripheral/src/ch32v00x_gpio.c":395 -1
+     (nil)
+ -> 175)
+(note 166 165 167 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 167 166 168 20 (set (reg:SI 172)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 GPIO_Remap+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 168 167 169 20 (set (reg:SI 95 [ _24 ])
+        (lshiftrt:SI (reg:SI 172)
+            (const_int 21 [0x15]))) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 169 168 170 20 (set (reg:SI 96 [ _25 ])
+        (ashift:SI (reg:SI 95 [ _24 ])
+            (const_int 4 [0x4]))) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 170 169 171 20 (set (reg:SI 173)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 171 170 172 20 (set (reg:SI 97 [ _26 ])
+        (ashift:SI (reg:SI 173)
+            (subreg:QI (reg:SI 96 [ _25 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 172 171 173 20 (set (reg:SI 175)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 173 172 174 20 (set (reg:SI 174)
+        (ior:SI (reg:SI 175)
+            (reg:SI 97 [ _26 ]))) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(insn 174 173 175 20 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 174)) "../Peripheral/src/ch32v00x_gpio.c":397 -1
+     (nil))
+(code_label 175 174 176 21 39 (nil) [9 uses])
+(note 176 175 177 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 177 176 178 21 (set (reg/f:SI 98 [ _27 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":402 -1
+     (nil))
+(insn 178 177 179 21 (set (reg:SI 176)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":402 -1
+     (nil))
+(insn 179 178 182 21 (set (mem/v:SI (plus:SI (reg/f:SI 98 [ _27 ])
+                (const_int 4 [0x4])) [2 _27->PCFR1+0 S4 A32])
+        (reg:SI 176)) "../Peripheral/src/ch32v00x_gpio.c":402 -1
+     (nil))
+(insn 182 179 0 21 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":403 -1
+     (nil))
+
+;; Function GPIO_EXTILineConfig (GPIO_EXTILineConfig, funcdef_no=35, decl_uid=4045, cgraph_uid=36, symbol_order=36)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 5 2 (set (reg:SI 89)
+        (reg:SI 10 a0 [ GPIO_PortSource ])) "../Peripheral/src/ch32v00x_gpio.c":418 -1
+     (nil))
+(insn 5 2 3 2 (set (reg:SI 91)
+        (reg:SI 11 a1 [ GPIO_PinSource ])) "../Peripheral/src/ch32v00x_gpio.c":418 -1
+     (nil))
+(insn 3 5 4 2 (set (reg:QI 90)
+        (subreg:QI (reg:SI 89) 0)) "../Peripheral/src/ch32v00x_gpio.c":418 -1
+     (nil))
+(insn 4 3 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -5 [0xfffffffffffffffb])) [0 GPIO_PortSource+0 S1 A8])
+        (reg:QI 90)) "../Peripheral/src/ch32v00x_gpio.c":418 -1
+     (nil))
+(insn 6 4 7 2 (set (reg:QI 92)
+        (subreg:QI (reg:SI 91) 0)) "../Peripheral/src/ch32v00x_gpio.c":418 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [0 GPIO_PinSource+0 S1 A8])
+        (reg:QI 92)) "../Peripheral/src/ch32v00x_gpio.c":418 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":419 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 72 [ _1 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 GPIO_PinSource+0 S1 A8]))) "../Peripheral/src/ch32v00x_gpio.c":421 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 73 [ _2 ])
+        (ashift:SI (reg:SI 72 [ _1 ])
+            (const_int 1 [0x1]))) "../Peripheral/src/ch32v00x_gpio.c":421 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 93)
+        (const_int 3 [0x3])) "../Peripheral/src/ch32v00x_gpio.c":421 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 74 [ _3 ])
+        (ashift:SI (reg:SI 93)
+            (subreg:QI (reg:SI 73 [ _2 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":421 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])
+        (reg:SI 74 [ _3 ])) "../Peripheral/src/ch32v00x_gpio.c":421 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 75 [ _4 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 76 [ _5 ])
+        (mem/v:SI (plus:SI (reg/f:SI 75 [ _4 ])
+                (const_int 8 [0x8])) [2 _4->EXTICR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 94)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmp+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 77 [ _6 ])
+        (not:SI (reg:SI 94))) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/f:SI 78 [ _7 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 79 [ _8 ])
+        (and:SI (reg:SI 76 [ _5 ])
+            (reg:SI 77 [ _6 ]))) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/v:SI (plus:SI (reg/f:SI 78 [ _7 ])
+                (const_int 8 [0x8])) [2 _7->EXTICR+0 S4 A32])
+        (reg:SI 79 [ _8 ])) "../Peripheral/src/ch32v00x_gpio.c":422 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 80 [ _9 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 81 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 80 [ _9 ])
+                (const_int 8 [0x8])) [2 _9->EXTICR+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 82 [ _11 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -5 [0xfffffffffffffffb])) [0 GPIO_PortSource+0 S1 A8]))) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 83 [ _12 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 GPIO_PinSource+0 S1 A8]))) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 84 [ _13 ])
+        (ashift:SI (reg:SI 83 [ _12 ])
+            (const_int 1 [0x1]))) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 85 [ _14 ])
+        (ashift:SI (reg:SI 82 [ _11 ])
+            (subreg:QI (reg:SI 84 [ _13 ]) 0))) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 86 [ _15 ])
+        (reg:SI 85 [ _14 ])) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 31 30 32 2 (set (reg/f:SI 87 [ _16 ])
+        (const_int 1073807360 [0x40010000])) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 88 [ _17 ])
+        (ior:SI (reg:SI 81 [ _10 ])
+            (reg:SI 86 [ _15 ]))) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 33 32 36 2 (set (mem/v:SI (plus:SI (reg/f:SI 87 [ _16 ])
+                (const_int 8 [0x8])) [2 _16->EXTICR+0 S4 A32])
+        (reg:SI 88 [ _17 ])) "../Peripheral/src/ch32v00x_gpio.c":423 -1
+     (nil))
+(insn 36 33 0 2 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":424 -1
+     (nil))
+
+;; Function GPIO_IPD_Unused (GPIO_IPD_Unused, funcdef_no=36, decl_uid=4120, cgraph_uid=37, symbol_order=37)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 4->5 to 9 failed.
+Redirecting jump 26 from 8 to 9.
+deleting block 8
+Removing jump 69.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 4->5 to 9 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [3 GPIO_InitStructure+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":437 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [3 GPIO_InitStructure+4 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":437 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 GPIO_InitStructure+8 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":437 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 chip+0 S4 A32])
+        (const_int 0 [0])) "../Peripheral/src/ch32v00x_gpio.c":438 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../Peripheral/src/ch32v00x_gpio.c":439 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a0)
+        (const_int 52 [0x34])) "../Peripheral/src/ch32v00x_gpio.c":439 -1
+     (nil))
+(call_insn 11 10 12 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 05b59ca8 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":439 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 12 11 13 2 (set (reg:SI 74)
+        (const_int 536866816 [0x1ffff000])) "../Peripheral/src/ch32v00x_gpio.c":440 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 72 [ _1 ])
+        (plus:SI (reg:SI 74)
+            (const_int 1988 [0x7c4]))) "../Peripheral/src/ch32v00x_gpio.c":440 -1
+     (expr_list:REG_EQUAL (const_int 536868804 [0x1ffff7c4])
+        (nil)))
+(insn 14 13 15 2 (set (reg:SI 73 [ _2 ])
+        (mem:SI (reg/f:SI 72 [ _1 ]) [2 *_1+0 S4 A32])) "../Peripheral/src/ch32v00x_gpio.c":440 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 75)
+        (and:SI (reg:SI 73 [ _2 ])
+            (const_int -241 [0xffffffffffffff0f]))) "../Peripheral/src/ch32v00x_gpio.c":440 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 chip+0 S4 A32])
+        (reg:SI 75)) "../Peripheral/src/ch32v00x_gpio.c":440 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 76)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 chip+0 S4 A32])) -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 78)
+        (const_int 3276800 [0x320000])) -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 77)
+        (plus:SI (reg:SI 78)
+            (const_int 1280 [0x500]))) -1
+     (expr_list:REG_EQUAL (const_int 3278080 [0x320500])
+        (nil)))
+(jump_insn 20 19 21 2 (set (pc)
+        (if_then_else (eq (reg:SI 76)
+                (reg:SI 77))
+            (label_ref 29)
+            (pc))) -1
+     (nil)
+ -> 29)
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 4 (set (reg:SI 79)
+        (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [2 chip+0 S4 A32])) -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 81)
+        (const_int 3342336 [0x330000])) -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 80)
+        (plus:SI (reg:SI 81)
+            (const_int 1280 [0x500]))) -1
+     (expr_list:REG_EQUAL (const_int 3343616 [0x330500])
+        (nil)))
+(jump_insn 25 24 28 4 (set (pc)
+        (if_then_else (eq (reg:SI 79)
+                (reg:SI 80))
+            (label_ref 50)
+            (pc))) -1
+     (nil)
+ -> 50)
+(note 28 25 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 26 28 27 5 (set (pc)
+        (label_ref:SI 73)) 250 {jump}
+     (nil)
+ -> 73)
+(barrier 27 26 29)
+(code_label 29 27 30 6 48 (nil) [1 uses])
+(note 30 29 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 6 (set (reg:HI 82)
+        (const_int 13 [0xd])) "../Peripheral/src/ch32v00x_gpio.c":445 -1
+     (nil))
+(insn 32 31 33 6 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 82)) "../Peripheral/src/ch32v00x_gpio.c":445 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:SI 83)
+        (const_int 72 [0x48])) "../Peripheral/src/ch32v00x_gpio.c":447 -1
+     (nil))
+(insn 34 33 35 6 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [6 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 83)) "../Peripheral/src/ch32v00x_gpio.c":447 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:SI 84)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -16 [0xfffffffffffffff0]))) "../Peripheral/src/ch32v00x_gpio.c":448 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 11 a1)
+        (reg:SI 84)) "../Peripheral/src/ch32v00x_gpio.c":448 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:SI 85)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":448 -1
+     (nil))
+(insn 38 37 39 6 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 85)
+            (const_int 1024 [0x400]))) "../Peripheral/src/ch32v00x_gpio.c":448 -1
+     (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
+        (nil)))
+(call_insn 39 38 40 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 05b9c870 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":448 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 40 39 41 6 (set (reg:HI 86)
+        (const_int 32 [0x20])) "../Peripheral/src/ch32v00x_gpio.c":449 -1
+     (nil))
+(insn 41 40 42 6 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 86)) "../Peripheral/src/ch32v00x_gpio.c":449 -1
+     (nil))
+(insn 42 41 43 6 (set (reg:SI 87)
+        (const_int 72 [0x48])) "../Peripheral/src/ch32v00x_gpio.c":450 -1
+     (nil))
+(insn 43 42 44 6 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [6 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 87)) "../Peripheral/src/ch32v00x_gpio.c":450 -1
+     (nil))
+(insn 44 43 45 6 (set (reg:SI 88)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -16 [0xfffffffffffffff0]))) "../Peripheral/src/ch32v00x_gpio.c":451 -1
+     (nil))
+(insn 45 44 46 6 (set (reg:SI 11 a1)
+        (reg:SI 88)) "../Peripheral/src/ch32v00x_gpio.c":451 -1
+     (nil))
+(insn 46 45 47 6 (set (reg:SI 10 a0)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":451 -1
+     (nil))
+(call_insn 47 46 48 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 05b9c870 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":451 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(jump_insn 48 47 49 6 (set (pc)
+        (label_ref 73)) "../Peripheral/src/ch32v00x_gpio.c":452 -1
+     (nil)
+ -> 73)
+(barrier 49 48 50)
+(code_label 50 49 51 7 49 (nil) [1 uses])
+(note 51 50 52 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 7 (set (reg:HI 89)
+        (const_int 141 [0x8d])) "../Peripheral/src/ch32v00x_gpio.c":456 -1
+     (nil))
+(insn 53 52 54 7 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 89)) "../Peripheral/src/ch32v00x_gpio.c":456 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:SI 90)
+        (const_int 72 [0x48])) "../Peripheral/src/ch32v00x_gpio.c":458 -1
+     (nil))
+(insn 55 54 56 7 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [6 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 90)) "../Peripheral/src/ch32v00x_gpio.c":458 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:SI 91)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -16 [0xfffffffffffffff0]))) "../Peripheral/src/ch32v00x_gpio.c":459 -1
+     (nil))
+(insn 57 56 58 7 (set (reg:SI 11 a1)
+        (reg:SI 91)) "../Peripheral/src/ch32v00x_gpio.c":459 -1
+     (nil))
+(insn 58 57 59 7 (set (reg:SI 92)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":459 -1
+     (nil))
+(insn 59 58 60 7 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 92)
+            (const_int 1024 [0x400]))) "../Peripheral/src/ch32v00x_gpio.c":459 -1
+     (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
+        (nil)))
+(call_insn 60 59 61 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 05b9c870 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":459 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 61 60 62 7 (set (reg:HI 93)
+        (const_int 233 [0xe9])) "../Peripheral/src/ch32v00x_gpio.c":460 -1
+     (nil))
+(insn 62 61 63 7 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 93)) "../Peripheral/src/ch32v00x_gpio.c":460 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:SI 94)
+        (const_int 72 [0x48])) "../Peripheral/src/ch32v00x_gpio.c":463 -1
+     (nil))
+(insn 64 63 65 7 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [6 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 94)) "../Peripheral/src/ch32v00x_gpio.c":463 -1
+     (nil))
+(insn 65 64 66 7 (set (reg:SI 95)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -16 [0xfffffffffffffff0]))) "../Peripheral/src/ch32v00x_gpio.c":464 -1
+     (nil))
+(insn 66 65 67 7 (set (reg:SI 11 a1)
+        (reg:SI 95)) "../Peripheral/src/ch32v00x_gpio.c":464 -1
+     (nil))
+(insn 67 66 68 7 (set (reg:SI 10 a0)
+        (const_int 1073811456 [0x40011000])) "../Peripheral/src/ch32v00x_gpio.c":464 -1
+     (nil))
+(call_insn 68 67 73 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x3] <function_decl 05b9c870 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../Peripheral/src/ch32v00x_gpio.c":464 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(code_label 73 68 74 9 51 (nil) [2 uses])
+(note 74 73 77 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 77 74 0 9 (const_int 0 [0]) "../Peripheral/src/ch32v00x_gpio.c":474 -1
+     (nil))

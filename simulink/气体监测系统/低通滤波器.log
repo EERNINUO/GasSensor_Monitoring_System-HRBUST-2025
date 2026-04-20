@@ -1,0 +1,74 @@
+LTspice 24.1.9 for Windows
+Circuit: C:\Users\18902\Desktop\传感器大作业\simulink\低通滤波器.net
+Start Time: Wed Dec 24 10:46:44 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+vernier = 0.5
+vernier = 0.25
+Gmin = 5.75385e-05
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 5.88217e-05
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00520833
+Gmin = 5.85732e-05
+vernier = 0.00694444
+Gmin = 5.76908e-05
+vernier = 0.00925925
+vernier = 0.0123457
+Gmin = 5.62747e-05
+vernier = 0.0164609
+vernier = 0.0219478
+Gmin = 5.41029e-05
+vernier = 0.0292638
+Gmin = 5.07586e-05
+vernier = 0.0390184
+vernier = 0.0520245
+Gmin = 4.57312e-05
+vernier = 0.0693659
+vernier = 0.0924879
+Gmin = 3.87836e-05
+vernier = 0.123317
+Gmin = 2.9722e-05
+vernier = 0.164423
+vernier = 0.21923
+Gmin = 1.92931e-05
+vernier = 0.292307
+vernier = 0.389743
+Gmin = 9.81112e-06
+vernier = 0.519657
+Gmin = 3.34654e-06
+vernier = 0.692876
+vernier = 0.923834
+Gmin = 6.089e-07
+vernier = 1
+Gmin = 6.84613e-08
+Gmin = 7.35098e-09
+Gmin = 7.89305e-10
+Gmin = 8.4751e-11
+Gmin = 9.10007e-12
+Gmin = 9.77113e-13
+Gmin = 1.04917e-13
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.180 seconds.
+
+Files loaded:
+C:\Users\18902\Desktop\传感器大作业\simulink\低通滤波器.net
+C:\Users\18902\Documents\LTspice\model\lmx58_lm2904.lib
+

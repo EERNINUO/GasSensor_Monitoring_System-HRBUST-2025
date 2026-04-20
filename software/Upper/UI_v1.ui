@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>791</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>220</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>220</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>串口设置</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>282</width>
+             <height>187</height>
+            </rect>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_2">
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>波特率(&amp;B)</string>
+              </property>
+              <property name="buddy">
+               <cstring>BaudRate</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="BaudRate">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="sizeIncrement">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="currentText">
+               <string>115200</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <property name="maxVisibleItems">
+               <number>16</number>
+              </property>
+              <property name="insertPolicy">
+               <enum>QComboBox::InsertAtCurrent</enum>
+              </property>
+              <property name="minimumContentsLength">
+               <number>0</number>
+              </property>
+              <property name="duplicatesEnabled">
+               <bool>false</bool>
+              </property>
+              <item>
+               <property name="text">
+                <string>115200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2400</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4800</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9600</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>19200</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>38400</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>57600</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>230400</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>460800</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>921600</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>串口号(&amp;C)</string>
+              </property>
+              <property name="buddy">
+               <cstring>ComList</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="ComList">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>false</bool>
+              </property>
+              <property name="currentText">
+               <string/>
+              </property>
+              <property name="maxVisibleItems">
+               <number>16</number>
+              </property>
+              <property name="insertPolicy">
+               <enum>QComboBox::InsertAtCurrent</enum>
+              </property>
+              <property name="minimumContentsLength">
+               <number>0</number>
+              </property>
+              <property name="duplicatesEnabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>校验位</string>
+              </property>
+              <property name="buddy">
+               <cstring>CaliBit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="CaliBit">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>无校验</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>偶校验</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>奇校验</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1校验</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>0校验</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>数据位(&amp;D)</string>
+              </property>
+              <property name="buddy">
+               <cstring>DataBit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="DataBit">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>3</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>5位</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6位</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7位</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8位</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>停止位(&amp;S)</string>
+              </property>
+              <property name="buddy">
+               <cstring>StopBit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="StopBit">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>1 位</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.5 位</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2 位</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QPushButton" name="ComCtrl">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>打开串口</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="minimumSize">
+           <size>
+            <width>180</width>
+            <height>113</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>采样状态</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QFormLayout" name="formLayout_2">
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="NowValue">
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>报警值</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>当前值</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="alarm_Value">
+               <property name="text">
+                <string>2000</string>
+               </property>
+               <property name="readOnly">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="alarmValue_Set">
+             <property name="text">
+              <string>设置报警值</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="MatplotlibWidget" name="DataShow_Widget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>480</width>
+        <height>360</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>791</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MatplotlibWidget</class>
+   <extends>QWidget</extends>
+   <header>matplotlibwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

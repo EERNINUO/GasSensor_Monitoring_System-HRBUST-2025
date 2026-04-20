@@ -1,0 +1,10 @@
+# 忽略报告书等
+答辩/
+气体监测系统_backup/
+调制解调PCB_backup/
+*.eprj_backup
+
+.vscode/
+.mrs/
+.obj/
+__pycache__/

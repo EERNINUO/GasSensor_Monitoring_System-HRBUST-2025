@@ -1,0 +1,167 @@
+
+;; Function Timer_Init (Timer_Init, funcdef_no=21, decl_uid=4046, cgraph_uid=22, symbol_order=22)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":4 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 10 a0)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":4 -1
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB1PeriphClockCmd") [flags 0x41] <function_decl 06728528 RCC_APB1PeriphClockCmd>) [0 RCC_APB1PeriphClockCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../middlewire/Timer.c":4 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 8 7 9 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [2 timbase_InitStruct.TIM_ClockDivision+0 S2 A16])
+        (const_int 0 [0])) "../middlewire/Timer.c":7 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [2 timbase_InitStruct.TIM_CounterMode+0 S2 A16])
+        (const_int 0 [0])) "../middlewire/Timer.c":8 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:QI 72)
+        (const_int 50 [0x32])) "../middlewire/Timer.c":9 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 timbase_InitStruct.TIM_RepetitionCounter+0 S1 A32])
+        (reg:QI 72)) "../middlewire/Timer.c":9 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:HI 73)
+        (const_int 99 [0x63])) "../middlewire/Timer.c":10 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [2 timbase_InitStruct.TIM_Period+0 S2 A32])
+        (reg:HI 73)) "../middlewire/Timer.c":10 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:HI 75)
+        (const_int 4096 [0x1000])) "../middlewire/Timer.c":11 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:HI 74)
+        (plus:HI (reg:HI 75)
+            (const_int 703 [0x2bf]))) "../middlewire/Timer.c":11 -1
+     (expr_list:REG_EQUAL (const_int 4799 [0x12bf])
+        (nil)))
+(insn 16 15 17 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 timbase_InitStruct.TIM_Prescaler+0 S2 A32])
+        (reg:HI 74)) "../middlewire/Timer.c":11 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":13 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 10 a0)
+        (const_int 1073741824 [0x40000000])) "../middlewire/Timer.c":13 -1
+     (nil))
+(call_insn 19 18 20 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("TIM_ClearITPendingBit") [flags 0x41] <function_decl 06756b40 TIM_ClearITPendingBit>) [0 TIM_ClearITPendingBit S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../middlewire/Timer.c":13 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:HI (use (reg:SI 11 a1))
+            (nil))))
+(insn 20 19 21 2 (set (reg:QI 76)
+        (const_int 35 [0x23])) "../middlewire/Timer.c":16 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 nvic_InitStruct.NVIC_IRQChannel+0 S1 A32])
+        (reg:QI 76)) "../middlewire/Timer.c":16 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -19 [0xffffffffffffffed])) [0 nvic_InitStruct.NVIC_IRQChannelPreemptionPriority+0 S1 A8])
+        (const_int 0 [0])) "../middlewire/Timer.c":17 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:QI 77)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":18 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/c:QI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -18 [0xffffffffffffffee])) [0 nvic_InitStruct.NVIC_IRQChannelSubPriority+0 S1 A16])
+        (reg:QI 77)) "../middlewire/Timer.c":18 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 78)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":19 -1
+     (nil))
+(insn 26 25 27 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 nvic_InitStruct.NVIC_IRQChannelCmd+0 S4 A32])
+        (reg:SI 78)) "../middlewire/Timer.c":19 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 79)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -20 [0xffffffffffffffec]))) "../middlewire/Timer.c":20 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 10 a0)
+        (reg:SI 79)) "../middlewire/Timer.c":20 -1
+     (nil))
+(call_insn 29 28 30 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("NVIC_Init") [flags 0x41] <function_decl 06714a50 NVIC_Init>) [0 NVIC_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../middlewire/Timer.c":20 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 30 29 31 2 (set (reg:SI 12 a2)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":22 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":22 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 10 a0)
+        (const_int 1073741824 [0x40000000])) "../middlewire/Timer.c":22 -1
+     (nil))
+(call_insn 33 32 34 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("TIM_ITConfig") [flags 0x41] <function_decl 067309d8 TIM_ITConfig>) [0 TIM_ITConfig S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../middlewire/Timer.c":22 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:HI (use (reg:SI 11 a1))
+            (expr_list:SI (use (reg:SI 12 a2))
+                (nil)))))
+(insn 34 33 35 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../middlewire/Timer.c":23 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 10 a0)
+        (const_int 1073741824 [0x40000000])) "../middlewire/Timer.c":23 -1
+     (nil))
+(call_insn 36 35 39 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("TIM_Cmd") [flags 0x41] <function_decl 067308e8 TIM_Cmd>) [0 TIM_Cmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../middlewire/Timer.c":23 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 39 36 0 2 (const_int 0 [0]) "../middlewire/Timer.c":24 -1
+     (nil))

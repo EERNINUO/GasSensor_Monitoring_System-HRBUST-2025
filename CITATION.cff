@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "如果引用此项目，请引用为："
+title: "气体检测系统-学年设计项目"
+authors:
+  - family-names: "郭"
+    given-names: "晟芃"
+version: 1.0.0
+date-released: 2025-01-09
+doi: 10.5281/zenodo.0000000
+license: GPL-3.0
+repository-code: https://github.com/EERNINUO/GasSensor_Monitoring_System-HRBUST-2025
+keywords:
+  - "气体传感器"
+  - "CH32V003"
+  - "PyQt6"
+  - "学年设计"
+  - "哈尔滨理工大学"
+abstract: "本项目为哈尔滨理工大学测控技术与仪器专业学年设计项目，实现了一个完整的气体浓度检测系统。"

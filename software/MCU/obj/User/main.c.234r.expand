@@ -1,0 +1,406 @@
+
+;; Function USARTx_CFG (USARTx_CFG, funcdef_no=21, decl_uid=4051, cgraph_uid=22, symbol_order=23)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [1 GPIO_InitStructure+0 S4 A32])
+        (const_int 0 [0])) "../User/main.c":45 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 GPIO_InitStructure+4 S4 A32])
+        (const_int 0 [0])) "../User/main.c":45 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [1 GPIO_InitStructure+8 S4 A32])
+        (const_int 0 [0])) "../User/main.c":45 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [5 USART_InitStructure+0 S4 A32])
+        (const_int 0 [0])) "../User/main.c":46 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [5 USART_InitStructure+4 S4 A32])
+        (const_int 0 [0])) "../User/main.c":46 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [5 USART_InitStructure+8 S4 A32])
+        (const_int 0 [0])) "../User/main.c":46 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 USART_InitStructure+12 S4 A32])
+        (const_int 0 [0])) "../User/main.c":46 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/main.c":48 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 72)
+        (const_int 16384 [0x4000])) "../User/main.c":48 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 72)
+            (const_int 32 [0x20]))) "../User/main.c":48 -1
+     (expr_list:REG_EQUAL (const_int 16416 [0x4020])
+        (nil)))
+(call_insn 15 14 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("RCC_APB2PeriphClockCmd") [flags 0x41] <function_decl 0676d690 RCC_APB2PeriphClockCmd>) [0 RCC_APB2PeriphClockCmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":48 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 16 15 17 2 (set (reg:HI 73)
+        (const_int 32 [0x20])) "../User/main.c":51 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 73)) "../User/main.c":51 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 74)
+        (const_int 3 [0x3])) "../User/main.c":52 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [3 GPIO_InitStructure.GPIO_Speed+0 S4 A32])
+        (reg:SI 74)) "../User/main.c":52 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 75)
+        (const_int 24 [0x18])) "../User/main.c":53 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [4 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 75)) "../User/main.c":53 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 76)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -12 [0xfffffffffffffff4]))) "../User/main.c":54 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 11 a1)
+        (reg:SI 76)) "../User/main.c":54 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 77)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":54 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 77)
+            (const_int 1024 [0x400]))) "../User/main.c":54 -1
+     (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
+        (nil)))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 067421e0 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":54 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 27 26 28 2 (set (reg:HI 78)
+        (const_int 64 [0x40])) "../User/main.c":55 -1
+     (nil))
+(insn 28 27 29 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [2 GPIO_InitStructure.GPIO_Pin+0 S2 A32])
+        (reg:HI 78)) "../User/main.c":55 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 79)
+        (const_int 4 [0x4])) "../User/main.c":56 -1
+     (nil))
+(insn 30 29 31 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [4 GPIO_InitStructure.GPIO_Mode+0 S4 A32])
+        (reg:SI 79)) "../User/main.c":56 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 80)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -12 [0xfffffffffffffff4]))) "../User/main.c":57 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 11 a1)
+        (reg:SI 80)) "../User/main.c":57 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:SI 81)
+        (const_int 1073811456 [0x40011000])) "../User/main.c":57 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 81)
+            (const_int 1024 [0x400]))) "../User/main.c":57 -1
+     (expr_list:REG_EQUAL (const_int 1073812480 [0x40011400])
+        (nil)))
+(call_insn 35 34 36 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("GPIO_Init") [flags 0x41] <function_decl 067421e0 GPIO_Init>) [0 GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":57 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 36 35 37 2 (set (reg:SI 83)
+        (const_int 114688 [0x1c000])) "../User/main.c":59 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 82)
+        (plus:SI (reg:SI 83)
+            (const_int 512 [0x200]))) "../User/main.c":59 -1
+     (expr_list:REG_EQUAL (const_int 115200 [0x1c200])
+        (nil)))
+(insn 38 37 39 2 (set (mem/c:SI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [6 USART_InitStructure.USART_BaudRate+0 S4 A32])
+        (reg:SI 82)) "../User/main.c":59 -1
+     (nil))
+(insn 39 38 40 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [2 USART_InitStructure.USART_WordLength+0 S2 A32])
+        (const_int 0 [0])) "../User/main.c":60 -1
+     (nil))
+(insn 40 39 41 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -22 [0xffffffffffffffea])) [2 USART_InitStructure.USART_StopBits+0 S2 A16])
+        (const_int 0 [0])) "../User/main.c":61 -1
+     (nil))
+(insn 41 40 42 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [2 USART_InitStructure.USART_Parity+0 S2 A32])
+        (const_int 0 [0])) "../User/main.c":62 -1
+     (nil))
+(insn 42 41 43 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [2 USART_InitStructure.USART_HardwareFlowControl+0 S2 A32])
+        (const_int 0 [0])) "../User/main.c":63 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:HI 84)
+        (const_int 12 [0xc])) "../User/main.c":64 -1
+     (nil))
+(insn 44 43 45 2 (set (mem/c:HI (plus:SI (reg/f:SI 67 virtual-stack-vars)
+                (const_int -18 [0xffffffffffffffee])) [2 USART_InitStructure.USART_Mode+0 S2 A16])
+        (reg:HI 84)) "../User/main.c":64 -1
+     (nil))
+(insn 45 44 46 2 (set (reg:SI 85)
+        (plus:SI (reg/f:SI 67 virtual-stack-vars)
+            (const_int -28 [0xffffffffffffffe4]))) "../User/main.c":66 -1
+     (nil))
+(insn 46 45 47 2 (set (reg:SI 11 a1)
+        (reg:SI 85)) "../User/main.c":66 -1
+     (nil))
+(insn 47 46 48 2 (set (reg:SI 86)
+        (const_int 1073823744 [0x40014000])) "../User/main.c":66 -1
+     (nil))
+(insn 48 47 49 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 86)
+            (const_int -2048 [0xfffffffffffff800]))) "../User/main.c":66 -1
+     (expr_list:REG_EQUAL (const_int 1073821696 [0x40013800])
+        (nil)))
+(call_insn 49 48 50 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("USART_Init") [flags 0x41] <function_decl 06799e88 USART_Init>) [0 USART_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":66 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 50 49 51 2 (set (reg:SI 11 a1)
+        (const_int 1 [0x1])) "../User/main.c":67 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:SI 87)
+        (const_int 1073823744 [0x40014000])) "../User/main.c":67 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 87)
+            (const_int -2048 [0xfffffffffffff800]))) "../User/main.c":67 -1
+     (expr_list:REG_EQUAL (const_int 1073821696 [0x40013800])
+        (nil)))
+(call_insn 53 52 56 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("USART_Cmd") [flags 0x41] <function_decl 067a6078 USART_Cmd>) [0 USART_Cmd S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":67 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(insn 56 53 0 2 (const_int 0 [0]) "../User/main.c":68 -1
+     (nil))
+
+;; Function main (main, funcdef_no=22, decl_uid=4056, cgraph_uid=23, symbol_order=24)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+deleting block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 10 a0)
+        (const_int 1 [0x1])) "../User/main.c":79 -1
+     (nil))
+(call_insn 6 5 7 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("NVIC_PriorityGroupConfig") [flags 0x41] <function_decl 06760ac8 NVIC_PriorityGroupConfig>) [0 NVIC_PriorityGroupConfig S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":79 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(call_insn 7 6 8 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("SystemCoreClockUpdate") [flags 0x41] <function_decl 066be618 SystemCoreClockUpdate>) [0 SystemCoreClockUpdate S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":80 -1
+     (nil)
+    (nil))
+(call_insn 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("Delay_Init") [flags 0x41] <function_decl 06829e10 Delay_Init>) [0 Delay_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":81 -1
+     (nil)
+    (nil))
+(insn 9 8 10 2 (set (reg:SI 75)
+        (const_int 114688 [0x1c000])) "../User/main.c":85 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 10 a0)
+        (plus:SI (reg:SI 75)
+            (const_int 512 [0x200]))) "../User/main.c":85 -1
+     (expr_list:REG_EQUAL (const_int 115200 [0x1c200])
+        (nil)))
+(call_insn 11 10 12 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("USART_Printf_Init") [flags 0x41] <function_decl 06829f78 USART_Printf_Init>) [0 USART_Printf_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":85 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(insn 12 11 13 2 (set (reg:SI 76)
+        (high:SI (symbol_ref:SI ("SystemCoreClock") [flags 0x40] <var_decl 066a7d68 SystemCoreClock>))) "../User/main.c":87 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 72 [ SystemCoreClock.0_1 ])
+        (mem/c:SI (lo_sum:SI (reg:SI 76)
+                (symbol_ref:SI ("SystemCoreClock") [flags 0x40] <var_decl 066a7d68 SystemCoreClock>)) [6 SystemCoreClock+0 S4 A32])) "../User/main.c":87 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 11 a1)
+        (reg:SI 72 [ SystemCoreClock.0_1 ])) "../User/main.c":87 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 77)
+        (high:SI (symbol_ref/f:SI ("*.LC0") [flags 0x2] <var_decl 067e3f78 *.LC0>))) "../User/main.c":87 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 10 a0)
+        (lo_sum:SI (reg:SI 77)
+            (symbol_ref/f:SI ("*.LC0") [flags 0x2] <var_decl 067e3f78 *.LC0>))) "../User/main.c":87 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC0") [flags 0x2] <var_decl 067e3f78 *.LC0>)
+        (nil)))
+(call_insn 17 16 18 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41] <function_decl 062c2f00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":87 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(call_insn 18 17 19 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("DBGMCU_GetCHIPID") [flags 0x41] <function_decl 0672b9d8 DBGMCU_GetCHIPID>) [0 DBGMCU_GetCHIPID S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":88 -1
+     (nil)
+    (nil))
+(insn 19 18 20 2 (set (reg:SI 73 [ _2 ])
+        (reg:SI 10 a0)) "../User/main.c":88 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 11 a1)
+        (reg:SI 73 [ _2 ])) "../User/main.c":88 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 78)
+        (high:SI (symbol_ref/f:SI ("*.LC1") [flags 0x2] <var_decl 067e3cb8 *.LC1>))) "../User/main.c":88 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 10 a0)
+        (lo_sum:SI (reg:SI 78)
+            (symbol_ref/f:SI ("*.LC1") [flags 0x2] <var_decl 067e3cb8 *.LC1>))) "../User/main.c":88 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:SI ("*.LC1") [flags 0x2] <var_decl 067e3cb8 *.LC1>)
+        (nil)))
+(call_insn 23 22 24 2 (parallel [
+            (set (reg:SI 10 a0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41] <function_decl 062c2f00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":88 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (expr_list:SI (use (reg:SI 11 a1))
+            (nil))))
+(call_insn 24 23 25 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("USARTx_CFG") [flags 0x3] <function_decl 068350f0 USARTx_CFG>) [0 USARTx_CFG S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":90 -1
+     (nil)
+    (nil))
+(call_insn 25 24 26 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("adc_Init") [flags 0x41] <function_decl 06829a50 adc_Init>) [0 adc_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":92 -1
+     (nil)
+    (nil))
+(call_insn 26 25 30 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("Timer_Init") [flags 0x41] <function_decl 06835078 Timer_Init>) [0 Timer_Init S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":93 -1
+     (nil)
+    (nil))
+(code_label 30 26 27 4 3 (nil) [1 uses])
+(note 27 30 28 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 4 (set (reg:SI 10 a0)
+        (const_int 10 [0xa])) "../User/main.c":105 -1
+     (nil))
+(call_insn 29 28 31 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("Delay_Ms") [flags 0x41] <function_decl 06829f00 Delay_Ms>) [0 Delay_Ms S4 A32])
+                (const_int 0 [0]))
+            (clobber (reg:SI 1 ra))
+        ]) "../User/main.c":105 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 10 a0))
+        (nil)))
+(jump_insn 31 29 32 4 (set (pc)
+        (label_ref 30)) "../User/main.c":105 -1
+     (nil)
+ -> 30)
+(barrier 32 31 0)
