@@ -10,8 +10,8 @@ from typing import Optional
 from datetime import datetime, timedelta
 import numpy as np
 import matplotlib.pyplot as plt
-from PyQt6.QtWidgets import QWidget, QVBoxLayout
-from PyQt6.QtCore import QTimer
+from PySide6.QtWidgets import QWidget, QVBoxLayout
+from PySide6.QtCore import QTimer
 import matplotlib.dates as mdates
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt import NavigationToolbar2QT as NavigationToolbar

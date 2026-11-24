@@ -9,9 +9,9 @@ All rights reserved.
 from typing import Optional
 import serial
 from serial.tools import list_ports
-from PyQt6.QtCore import pyqtSignal, QTimer
+from PySide6.QtCore import Signal, QTimer
 from Ui_UI_v1 import Ui_MainWindow
-from PyQt6.QtWidgets import QApplication, QMainWindow, QTextEdit, QVBoxLayout, QWidget
+from PySide6.QtWidgets import QApplication, QMainWindow, QTextEdit, QVBoxLayout, QWidget
 from .SerialPort_Work import SerialPort_Work
 from Data_Process import Data_Process
 

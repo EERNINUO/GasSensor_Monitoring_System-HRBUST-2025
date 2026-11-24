@@ -1,0 +1,17 @@
+# ============================================================
+# GitHub Linguist：语言统计规则
+# 目的：把厂商库与生成物排除出语言统计，只保留自有 C / Verilog / Python。
+# 注意：GitHub 按默认分支计算，合并进 develop 后才会反映在仓库页面。
+# ============================================================
+
+# ---- WCH 厂商代码（CubeMX 生成）----
+**/MCU/**                          -linguist-vendored
+**/MCU/Driver/**                   -linguist-vendored
+**/MCU/middlewire/**               -linguist-vendored
+**/MCU/User/main.c**               -linguist-vendored
+**/MCU/User/ch32v00x_it.c**        -linguist-vendored
+
+# ---- CubeMX 生成文件 ----
+**/Upper/Ui_UI_v1.py**              linguist-generated
+**/Upper/UI_v1.ui**                 linguist-generated
+

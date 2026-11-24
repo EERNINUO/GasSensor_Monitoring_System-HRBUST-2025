@@ -1,14 +1,14 @@
 import time
 import math
 import numpy as np
-from PyQt6.QtCore import pyqtSignal, QObject
+from PySide6.QtCore import Signal, QObject
 from Ui_UI_v1 import Ui_MainWindow
 
 RL_VALUE = 6_200
 
 class Data_Process(QObject):
-    alarm_Signal = pyqtSignal(bool)
-    highSpeed_Signal = pyqtSignal(bool)
+    alarm_Signal = Signal(bool)
+    highSpeed_Signal = Signal(bool)
 
     def __init__(self, UI_MainWindow: Ui_MainWindow):
         super().__init__()

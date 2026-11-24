@@ -7,14 +7,14 @@ which is available at https://github.com/EERNINUO/GasSensor_Monitoring_System-HR
 All rights reserved.
 '''
 import serial
-from PyQt6.QtCore import QThread, pyqtSignal, QMutex, QWaitCondition
+from PySide6.QtCore import QThread, Signal, QMutex, QWaitCondition
 
 class SerialPort_Work(QThread):
     """串口工作线程"""
-    data_received = pyqtSignal(int)          # 接收到的原始数据
-    error_occurred = pyqtSignal(str)           # 错误信息
-    status_changed = pyqtSignal(str, bool)     # 状态变化 (消息, 是否成功)
-    connection_status = pyqtSignal(bool)       # 连接状态
+    data_received = Signal(int)          # 接收到的原始数据
+    error_occurred = Signal(str)           # 错误信息
+    status_changed = Signal(str, bool)     # 状态变化 (消息, 是否成功)
+    connection_status = Signal(bool)       # 连接状态
 
     def __init__(self, openSerial: serial.Serial, parent=None):
         super(SerialPort_Work, self).__init__(parent)

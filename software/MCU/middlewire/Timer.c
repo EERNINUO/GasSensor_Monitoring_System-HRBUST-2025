@@ -19,11 +19,6 @@
 
 void USART1_IRQHandler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
 
-// ... 后续代码
-#include "Timer.h"
-
-void USART1_IRQHandler(void) __attribute__((interrupt("WCH-Interrupt-fast")));
-
 void Timer_Init(){
     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 

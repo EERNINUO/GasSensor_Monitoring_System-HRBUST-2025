@@ -8,7 +8,7 @@ All rights reserved.
 '''
 from threading import Thread
 from winsound import Beep
-from PyQt6 import QtWidgets, QtCore
+from PySide6 import QtWidgets, QtCore
 from Ui_UI_v1 import Ui_MainWindow
 from Serial.SerialPort_Ctrl import SerialPort_Ctrl
 from Data_Process import Data_Process

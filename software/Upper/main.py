@@ -7,7 +7,7 @@ which is available at https://github.com/EERNINUO/GasSensor_Monitoring_System-HR
 All rights reserved.
 '''
 import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow
 from Serial import SerialPort_Ctrl
 from QtEvent import QtEvent
 from Ui_UI_v1 import Ui_MainWindow
