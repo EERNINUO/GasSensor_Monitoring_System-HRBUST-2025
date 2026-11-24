@@ -5,7 +5,7 @@
 # ============================================================
 
 # ---- WCH 厂商代码（CubeMX 生成）----
-**/MCU/**                          -linguist-vendored
+**/MCU/**                          linguist-vendored
 **/MCU/Driver/**                   -linguist-vendored
 **/MCU/middlewire/**               -linguist-vendored
 **/MCU/User/main.c**               -linguist-vendored
